@@ -32,7 +32,8 @@ function App() {
                       path="/forgotpassword"
                       component={ForgotPass}
                     ></Route>
-                    <Route exact path="/reset/:id" component={ResetPassword}></Route>
+                    <Route path="/reset-password/:randomstring" component={ResetPassword} exact={true}></Route>
+                      
                     <Route
                       exact
                       path="/register"
